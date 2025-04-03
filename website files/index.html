@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CitiCycle</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- External Custom CSS -->
+  <link href="styles/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar (Brand, Nav Links, CTA Button) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <img src="images/citicycle-logo.png" alt="CitiCycle logo" width="69" height="45" class="d-inline-block align-text-top me-1">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="scripts/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scripts/howitworks.html">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scripts/stations.html">Stations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scripts/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section id="hero" class="text-center text-light d-flex align-items-center justify-content-center" style="background-image: url('images/img1.jpg'); background-size: cover; background-position: center; height: 70vh;">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-3">CitiCycle</h1>
+    <p class="lead mb-4"> Explore freely. Unlock your city.</p>
+    <a href="scripts/stations.html" class="btn btn-primary">Find Your Nearest Bike</a>
+  </div>
+</section>
+
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="h3 text-center mb-4">About Us</h2>
+      <p class="text-center text-muted"> 
+        Making commuting easy and accessible for everyone. Whether you're commuting to work,
+        exploring local attractions, or just enjoying a leisurely ride, CitiCycle is here to support your journey.
+      </p>
+    </div>
+  </section>
+
+
+    <!-- Decorative Divider Banner -->
+    <section class="py-5">
+      <div class="container">
+        <img src="images/img3.jpg" alt="Scenic city cycling view" class="img-fluid rounded shadow">
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h3 text-center mb-4">How It Works</h2>
+        <ol class="text-muted fs-5">
+          <li><strong>Join:</strong> Sign up via our mobile app.</li>
+          <li><strong>Pick:</strong> Find a bike at the nearest station.</li>
+          <li><strong>Locate:</strong> Use the map to view available bikes.</li>
+          <li><strong>Pay:</strong> Choose a plan or pay per ride.</li>
+          <li><strong>Unlock:</strong> Unlock a bike using the app.</li>
+          <li><strong>Enjoy:</strong> Ride freely and enjoy the city.</li>
+          <li><strong>Return:</strong> Park the bike at any CitiCycle station.</li>
+        </ol>
+      </div>
+    </section>
+    
+
+
+  <!-- Bike Stations Map Section -->
+  <section id="stations" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="h3 text-center mb-4">Bike Stations</h2>
+      <p class="text-center text-muted mb-4">
+        Our bike stations are conveniently located throughout Bristol, including popular spots like Temple Meads, Cabot Circus, and University of Bristol. Whether you're commuting or exploring, there’s always a CitiCycle station nearby.
+      </p>
+      <div class="text-center">
+        <a href="scripts/stations.html" class="btn btn-primary">View Stations Map</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Return to Top Button -->
+  <div class="text-center my-4"> <!-- Centered container for the button -->
+    <button onclick="topFunction()" id="myBtn" class="btn back-to-top">
+      Return to top of page ↑
+    </button>
+  </div>
+
+
+  <!-- Footer Section -->
+  <footer id="contact" class="bg-dark text-light pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>CitiCycle</h5>
+          <p class="small mb-0">
+            A fictional bike sharing service. <br>
+            Bringing convenient, eco-friendly rides to your city.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <p class="mb-1"><strong>Contact:</strong> info@citicycle.com | +1 (234) 567-8901</p>
+          <p class="mb-1">
+            <a href="scripts/aboutus.html" class="text-decoration-none text-light small me-3">About</a>
+            <a href="scripts/privacy.html" class="text-decoration-none text-light small me-3">Privacy</a>
+            <a href="scripts/terms.html" class="text-decoration-none text-light small">Terms</a>
+          </p>
+          <p class="small mb-0">&copy; 2025 CitiCycle. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for smooth scroll to top -->
+  <script>
+  function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+  </script>
+
+  <!-- Bootstrap 5 JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
